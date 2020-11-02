@@ -1,2 +1,2 @@
 # ISA_Lab1
-Repository di ISA Lab1
+Repository of ISA Lab1
