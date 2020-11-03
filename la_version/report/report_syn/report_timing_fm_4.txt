@@ -1,0 +1,91 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myiir
+Version: O-2018.06-SP4
+Date   : Fri Oct 23 09:57:35 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: a1_2[1] (input port clocked by MY_CLK)
+  Endpoint: filter/s_FB_OUT_reg[13]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myiir              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  a1_2[1] (in)                                            0.00       0.50 f
+  filter/a1_2[1] (filt_behavioural_nb13_g1)               0.00       0.50 f
+  filter/mult_189/b[1] (filt_behavioural_nb13_g1_DW_mult_tc_2)
+                                                          0.00       0.50 f
+  filter/mult_189/U682/Z (XOR2_X1)                        0.09       0.59 f
+  filter/mult_189/U417/ZN (INV_X1)                        0.11       0.70 r
+  filter/mult_189/U680/ZN (NAND2_X1)                      0.13       0.83 f
+  filter/mult_189/U479/ZN (OAI22_X1)                      0.08       0.91 r
+  filter/mult_189/U108/S (HA_X1)                          0.05       0.96 f
+  filter/mult_189/U658/ZN (AOI222_X1)                     0.11       1.07 r
+  filter/mult_189/U420/ZN (INV_X1)                        0.03       1.10 f
+  filter/mult_189/U657/ZN (AOI222_X1)                     0.09       1.19 r
+  filter/mult_189/U419/ZN (INV_X1)                        0.03       1.22 f
+  filter/mult_189/U656/ZN (AOI222_X1)                     0.09       1.31 r
+  filter/mult_189/U418/ZN (INV_X1)                        0.03       1.34 f
+  filter/mult_189/U655/ZN (AOI222_X1)                     0.09       1.43 r
+  filter/mult_189/U415/ZN (INV_X1)                        0.03       1.46 f
+  filter/mult_189/U654/ZN (AOI222_X1)                     0.09       1.55 r
+  filter/mult_189/U414/ZN (INV_X1)                        0.03       1.58 f
+  filter/mult_189/U653/ZN (AOI222_X1)                     0.09       1.67 r
+  filter/mult_189/U413/ZN (INV_X1)                        0.03       1.70 f
+  filter/mult_189/U652/ZN (AOI222_X1)                     0.11       1.81 r
+  filter/mult_189/U651/ZN (OAI222_X1)                     0.07       1.88 f
+  filter/mult_189/U650/ZN (AOI222_X1)                     0.11       1.99 r
+  filter/mult_189/U649/ZN (OAI222_X1)                     0.07       2.05 f
+  filter/mult_189/U17/CO (FA_X1)                          0.10       2.15 f
+  filter/mult_189/U16/CO (FA_X1)                          0.09       2.24 f
+  filter/mult_189/U15/CO (FA_X1)                          0.09       2.33 f
+  filter/mult_189/U14/CO (FA_X1)                          0.09       2.42 f
+  filter/mult_189/U13/CO (FA_X1)                          0.09       2.51 f
+  filter/mult_189/U12/CO (FA_X1)                          0.09       2.60 f
+  filter/mult_189/U11/CO (FA_X1)                          0.09       2.69 f
+  filter/mult_189/U10/CO (FA_X1)                          0.09       2.78 f
+  filter/mult_189/U9/CO (FA_X1)                           0.09       2.87 f
+  filter/mult_189/U8/CO (FA_X1)                           0.09       2.96 f
+  filter/mult_189/U7/CO (FA_X1)                           0.09       3.06 f
+  filter/mult_189/U6/CO (FA_X1)                           0.09       3.15 f
+  filter/mult_189/U5/CO (FA_X1)                           0.09       3.24 f
+  filter/mult_189/U449/Z (XOR2_X1)                        0.08       3.31 f
+  filter/mult_189/U447/Z (XOR2_X1)                        0.07       3.38 f
+  filter/mult_189/product[26] (filt_behavioural_nb13_g1_DW_mult_tc_2)
+                                                          0.00       3.38 f
+  filter/U70/ZN (AOI22_X1)                                0.04       3.42 r
+  filter/U69/ZN (INV_X1)                                  0.02       3.44 f
+  filter/s_FB_OUT_reg[13]/D (DFF_X1)                      0.01       3.45 f
+  data arrival time                                                  3.45
+
+  clock MY_CLK (rise edge)                                6.20       6.20
+  clock network delay (ideal)                             0.00       6.20
+  clock uncertainty                                      -0.07       6.13
+  filter/s_FB_OUT_reg[13]/CK (DFF_X1)                     0.00       6.13 r
+  library setup time                                     -0.04       6.09
+  data required time                                                 6.09
+  --------------------------------------------------------------------------
+  data required time                                                 6.09
+  data arrival time                                                 -3.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.64
+
+
+1

@@ -1,0 +1,68 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myiir
+Version: O-2018.06-SP4
+Date   : Fri Oct 23 09:53:34 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: a1_2[11] (input port clocked by MY_CLK)
+  Endpoint: filter/s_FB_OUT_reg[4]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myiir              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  a1_2[11] (in)                                           0.00       0.50 r
+  filter/a1_2[11] (filt_behavioural_nb13_g1)              0.00       0.50 r
+  filter/mult_189/b[11] (filt_behavioural_nb13_g1_DW_mult_tc_4)
+                                                          0.00       0.50 r
+  filter/mult_189/U571/ZN (XNOR2_X1)                      0.06       0.56 r
+  filter/mult_189/U912/ZN (OAI22_X1)                      0.04       0.60 f
+  filter/mult_189/U222/CO (FA_X1)                         0.11       0.71 f
+  filter/mult_189/U213/CO (FA_X1)                         0.10       0.81 f
+  filter/mult_189/U206/CO (FA_X1)                         0.09       0.90 f
+  filter/mult_189/U200/S (FA_X1)                          0.13       1.03 f
+  filter/mult_189/U644/ZN (NOR2_X1)                       0.05       1.08 r
+  filter/mult_189/U536/ZN (OAI21_X1)                      0.04       1.12 f
+  filter/mult_189/U645/ZN (AOI21_X1)                      0.06       1.18 r
+  filter/mult_189/U548/ZN (OAI21_X1)                      0.04       1.22 f
+  filter/mult_189/U910/ZN (INV_X1)                        0.04       1.27 r
+  filter/mult_189/U895/ZN (OAI21_X1)                      0.03       1.30 f
+  filter/mult_189/U824/ZN (XNOR2_X1)                      0.06       1.36 f
+  filter/mult_189/product[17] (filt_behavioural_nb13_g1_DW_mult_tc_4)
+                                                          0.00       1.36 f
+  filter/U95/ZN (AOI22_X1)                                0.05       1.41 r
+  filter/U96/ZN (INV_X1)                                  0.02       1.43 f
+  filter/s_FB_OUT_reg[4]/D (DFF_X1)                       0.01       1.44 f
+  data arrival time                                                  1.44
+
+  clock MY_CLK (rise edge)                                1.55       1.55
+  clock network delay (ideal)                             0.00       1.55
+  clock uncertainty                                      -0.07       1.48
+  filter/s_FB_OUT_reg[4]/CK (DFF_X1)                      0.00       1.48 r
+  library setup time                                     -0.04       1.44
+  data required time                                                 1.44
+  --------------------------------------------------------------------------
+  data required time                                                 1.44
+  data arrival time                                                 -1.44
+  --------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+1
