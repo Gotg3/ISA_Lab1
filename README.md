@@ -6,7 +6,7 @@ Group 30
 Members:
 Chisciotti Laura\
 Fusto Federico\
-Goti Gianluca 269825sssssss
+Goti Gianluca 269825
 
 Content:\
 base_version: base version of the filter\
