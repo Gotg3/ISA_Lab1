@@ -10,4 +10,4 @@ Goti Gianluca 269825
 
 Content:\
 base_version: base version of the filter\
-la_version: improved verion of the filter (look-ahead)
+la_version: improved version of the filter (look-ahead)
