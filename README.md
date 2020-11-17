@@ -11,4 +11,5 @@ Goti Gianluca: 269825
 Content:\
 base_version: base version of the filter\
 la_version: improved version of the filter (look-ahead)\
-matlab: script with comparisons
+matlab: script for results comparison\
+report_tex: tex file of the report and figures
